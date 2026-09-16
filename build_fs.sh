@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DEBIAN_RELEASE="buster"
+DEBIAN_RELEASE="trixie"
 SIZE="5G"
 DEBIAN_SRC="http://deb.debian.org/debian/"
 
@@ -102,7 +102,7 @@ if [ "$ARCH" = "arm64" ]; then
   /debootstrap/debootstrap --second-stage
 fi
 apt-get update
-apt-get install -y passwd apt net-tools
+apt-get install -y passwd apt net-tools cxl
 
 echo "root:stramash" | chpasswd
 EOF
