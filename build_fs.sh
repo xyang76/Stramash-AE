@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-DEBIAN_RELEASE="trixie"
+DEBIAN_RELEASE="buster"
 SIZE="5G"
-DEBIAN_SRC="http://deb.debian.org/debian/"
+DEBIAN_SRC="http://archive.debian.org/debian/"
 
 ARCHES=("amd64" "arm64")
 
